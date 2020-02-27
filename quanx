@@ -1,0 +1,5 @@
+hostname = api.bilibili.com
+
+#QX版 解锁B站大会员
+https:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl url 302 http://api.bili.best:22555/geturl/E0a9Bj6e/
+https:\/\/api.bilibili.com\/pgc\/view\/app\/season url 302 http://api.bili.best:22555/season/x/
