@@ -1,4 +1,4 @@
-hostname = api.bilibili.com,www.zhihu.com
+hostname = api.bilibili.com,www.zhihu.com,license.pdfexpert.com,pan.baidu.com
 
 #QX版 解锁B站大会员
 https:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl url 302 http://api.bili.best:22555/geturl/E0a9Bj6e/
@@ -6,3 +6,9 @@ https:\/\/api.bilibili.com\/pgc\/view\/app\/season url 302 http://api.bili.best:
 
 #知乎跳转
 ^https?:\/\/www\.zhihu\.com\/ url request-header (\r\n)User-Agent:.+(\r\n) request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36$2
+
+#document
+^https:\/\/license\.pdfexpert\.com\/api\/.*\/documents\/subscription\/(refresh$|check$) url script-response-body documents.js
+
+#百度云会员
+https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
