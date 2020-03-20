@@ -1,7 +1,7 @@
 hostname = api.bilibili.com,www.zhihu.com,license.pdfexpert.com,pan.baidu.com
 
 #QX版 解锁B站大会员
-https:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl url 302 http://api.bili.best:2300/geturl/E0a9Bj6e/
+https:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl url 302 http://api.bili.best:2300/geturl/
 https:\/\/api.bilibili.com\/pgc\/view\/app\/season url 302 http://api.bili.best:2300/season/x/
 
 #知乎跳转
