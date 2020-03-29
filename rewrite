@@ -1,8 +1,8 @@
 hostname = api.bilibili.com,www.zhihu.com,license.pdfexpert.com,pan.baidu.com,*.faceu.mobi
 
 #QX版 解锁B站大会员
-https:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl url 302 http://api.bili.best:2300/playurl
-https:\/\/api.bilibili.com\/pgc\/view\/app\/season url 302 http://api.bili.best:2300/season
+^https:\/\/api.bilibili.com\/pgc\/view\/app\/season http://api.bili.best/season header
+^https:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl http://api.bili.best/playurl header
 
 #知乎跳转
 ^https?:\/\/www\.zhihu\.com\/ url request-header (\r\n)User-Agent:.+(\r\n) request-header $1User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36$2
