@@ -1,4 +1,4 @@
-hostname = api.bilibili.com,www.zhihu.com,license.pdfexpert.com,pan.baidu.com,*.faceu.mobi,app.api.versa-ai.com,commerce-api.faceu.mobi, commerce-i18n-api.faceu.mobi
+hostname = api.bilibili.com,www.zhihu.com,license.pdfexpert.com,pan.baidu.com,*.faceu.mobi,app.api.versa-ai.com,commerce-api.faceu.mobi, commerce-i18n-api.faceu.mobi,*.videostarapp.com,
 
 #QX版 解锁B站大会员
 https:\/\/api\.bilibili\.com\/pgc\/player\/api\/playurl url 302 http://api.bili.best/playurl
@@ -21,3 +21,6 @@ https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body
 
 #解锁马卡龙Makaron
 https:\/\/app\.api\.versa-ai\.com\/pay\/order\/iap\/check url script-response-body mkl.js
+
+#VideoStar
+^https?:\/\/.*\.videostarapp\.com\/scripts\/subsNew\.php url script-response-body VideoStar.js
