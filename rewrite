@@ -16,5 +16,5 @@ https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body
 #轻颜相机VIP
 ^https?:\/\/commerce-api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info* url script-response-body qyxj.js
 
-#解锁马卡龙
+#解锁马卡龙Makaron
 https:\/\/app\.api\.versa-ai\.com\/pay\/order\/iap\/check url script-response-body mkl.js
