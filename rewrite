@@ -12,15 +12,3 @@ https:\/\/api.bilibili.com\/pgc\/view\/app\/season url 302 http://api.bili.best/
 
 #百度云会员
 https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
-
-#轻颜相机
-^https?:\/\/commerce-api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info* url script-response-body qyxj.js
-
-#ulike
-^https:\/\/commerce-i18n-api\.faceu\.mobi\/commerce\/v1\/subscription\/user_info$ url script-response-body qyxj.js
-
-#解锁马卡龙Makaron
-https:\/\/app\.api\.versa-ai\.com\/pay\/order\/iap\/check url script-response-body mkl.js
-
-#VideoStar
-^https?:\/\/.*\.videostarapp\.com\/scripts\/subsNew\.php url script-response-body VideoStar.js
